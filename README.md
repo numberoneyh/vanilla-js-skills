@@ -1,2 +1,3 @@
-# vanilla-sj-skills
-skills
+# Vanilla java script skills
+
+## Skills js
