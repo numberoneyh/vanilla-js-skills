@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/simplebar.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="header">
+      <div class="container">
+        <nav class="nav" title="Navigation menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+          <div class="nav__cart cart">
+            <div class="cart__text">
+              <span class="cart__quantity">0</span>
+            </div>
+            <div class="cart-content">
+              <ul class="cart-content__list" data-simplebar data-simplebar-auto-hide="false">
+                <!-- <li class="cart-content__item">
+                  <article class="cart-content__product cart-product">
+                    <img
+                      src="img/macbook/1.png"
+                      alt="MacBook"
+                      class="cart-product__img"
+                    />
+                    <div class="cart-product__text">
+                      <h3 class="cart-product__title">
+                        Apple A1707 MacBook Pro
+                      </h3>
+                      <span class="cart-product__price"> 12.000$ </span>
+                    </div>
+                    <button
+                      class="cart-product__delete"
+                      aria-label="remove cart"
+                    ></button>
+                  </article>
+                </li> -->
+              </ul>
+              <div class="cart-content__buttom">
+                <div class="cart-content__fullprice">
+                  <span>Total:</span>
+                  <span class="fullprice">125.000$</span>
+                </div>
+                <button class="cart-content__btn" data-modal-button="modal-3">Go to cart</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--========== MAIN ==========-->
+    <main class="main">
+      <!--========== TABS ==========-->
+      <section class="tabs container-offset">
+        <div class="container">
+          <div class="tabs__content">
+            <ul class="tabs__list" title="tabs">
+              <li class="tabs__item">
+                <button class="tabs__btn" data-tab="#tab_1" type="button" aria-hidden="true">tab 1</button>
+              </li>
+              <li class="tabs__item">
+                <button class="tabs__btn" data-tab="#tab_2" type="button" aria-hidden="true">tab 2</button>
+              </li>
+              <li class="tabs__item">
+                <button class="tabs__btn" data-tab="#tab_3" type="button" aria-hidden="true">tab 3</button>
+              </li>
+            </ul>
+            <div class="tabs__info" id="tab_1">
+              <p class="tabs__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias mollitia sapiente unde voluptas eum,
+                accusantium distinctio quae vitae corrupti, cumque repudiandae debitis pariatur dicta asperiores nam
+                obcaecati laboriosam cum aut? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+                mollitia sapiente unde voluptas eum, accusantium distinctio quae vitae corrupti, cumque repudiandae
+                debitis pariatur dicta asperiores nam obcaecati laboriosam cum aut?
+              </p>
+              <img src="img/1.jpg" alt="image" />
+            </div>
+            <div class="tabs__info" id="tab_2">
+              <p class="tabs__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias mollitia sapiente unde voluptas eum,
+                accusantium distinctio quae vitae corrupti, cumque repudiandae debitis pariatur dicta asperiores nam
+                obcaecati laboriosam cum aut?
+              </p>
+              <img src="img/2.jpg" alt="image" />
+            </div>
+            <div class="tabs__info" id="tab_3">
+              <p class="tabs__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias mollitia sapiente unde voluptas eum,
+                accusantium distinctio quae vitae corrupti, cumque repudiandae debitis pariatur dicta asperiores nam
+                obcaecati laboriosam cum aut?
+              </p>
+              <img src="img/3.jpg" alt="image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--========== HIDE-ShOW ==========-->
+      <section class="hide-show container-offset">
+        <div class="container">
+          <button class="hide-show__btn">Show</button>
+
+          <div class="hide-show__content">
+            <p class="hide-show__descr">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ducimus vel modi qui tempora rem
+              vitae aliquid dolorem a, eaque quis alias eum, ad, atque illum in ullam. Assumenda voluptates dolorum
+              reiciendis libero, quis eveniet praesentium culpa unde expedita placeat voluptatum dignissimos
+              perspiciatis eaque doloremque at, hic, suscipit animi aperiam doloribus iure nulla alias cumque. Natus,
+              reiciendis. Dignissimos suscipit at, optio quo dolore nihil facere expedita, perferendis sunt sequi itaque
+              ipsam aperiam. Consequuntur, sapiente! Repellendus ipsum obcaecati corporis similique labore minima, non
+              nihil laborum reiciendis ab consequatur iste hic vitae autem error vero? Consequuntur dolore, voluptas
+              fugit, dolorem
+            </p>
+            <img class="hide-show__img" src="img/4.jpg" alt="Photo" />
+          </div>
+        </div>
+      </section>
+
+      <!--========== ACCORDION ==========-->
+      <section class="accordions container-offset">
+        <div class="container">
+          <details class="accordion">
+            <summary class="accordion__control">
+              <h3 class="accordion__title">Accordion default</h3>
+              <span class="accordion__icon"></span>
+            </summary>
+            <div class="accordion__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quisquam saepe ab doloribus? Ipsum quod
+              asperiores ratione, facere laborum reprehenderit soluta eos, optio iusto quia nobis omnis quasi porro
+              odio.
+            </div>
+          </details>
+          <ul class="jsaccordion">
+            <li class="jsaccordion__item">
+              <button class="jsaccordion__btn" aria-expanded="false">
+                <span class="jsaccordion__title">JS accardion 1</span>
+                <span class="jsaccordion__icon"></span>
+              </button>
+              <p class="jsaccordion__content" aria-hidden="true">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quisquam saepe ab doloribus? Ipsum quod
+                asperiores ratione, facere laborum reprehenderit soluta eos, optio iusto quia nobis omnis quasi porro
+                odio.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--========== MODAL ==========-->
+      <section class="modall container-offset">
+        <div class="container">
+          <div class="modal">
+            <button class="modal__btn" type="button" aria-label="Open window" data-modal-button="modal-1">
+              Open modal
+            </button>
+            <button class="modal__btn" type="button" aria-label="Open window" data-modal-button="modal-2">
+              Open modal
+            </button>
+          </div>
+          <div class="content" data-modal id="modal-1">
+            <div class="content__wrapper">
+              <div class="content__header">
+                <h5 class="content__title">Modal window</h5>
+              </div>
+              <div class="content__main">
+                <p class="content__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit maxime consectetur distinctio
+                  quaerat quis, nobis blanditiis. Explicabo corporis maxime tenetur. Laudantium ipsum quam dignissimos
+                  deserunt quas dicta expedita alias non nisi. Ullam et ipsum suscipit totam perferendis ad illum aut
+                  eligendi ab a velit, quis quam odit tempore necessitatibus! Quas, dolore totam repudiandae tenetur
+                  quam hic cum. Magnam in odio placeat iusto quas earum. Laborum fuga odit rerum id labore doloribus
+                  harum facilis est eligendi voluptas vel soluta, veritatis, culpa in dolore fugit iusto nisi quas sit,
+                  quaerat magnam totam eum. Eligendi in vero natus rem iste, architecto beatae excepturi dolore
+                  voluptates deserunt eos explicabo sequi, qui voluptas
+                </p>
+                <!-- prettier-ignore -->
+                <button class="content__btn" type="button" aria-label="Close window" aria-hidden="true" data-modal-close>
+                  Close window
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="content" data-modal id="modal-2">
+            <div class="content__wrapper">
+              <div class="content__header">
+                <h5 class="content__title">Modal window</h5>
+              </div>
+              <div class="content__main">
+                <p class="content__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit maxime consectetur distinctio
+                  quaerat quis, nobis blanditiis. Explicabo corporis maxime tenetur. Laudantium ipsum quam dignissimos
+                  deserunt quas dicta expedita alias non nisi. Ullam et ipsum suscipit totam perferendis ad illum aut
+                  eligendi ab a velit, quis quam odit tempore necessitatibus! Quas, dolore totam repudiandae tenetur
+                  quam hic cum. Magnam in odio placeat iusto quas earum. Laborum fuga odit rerum id labore doloribus
+                </p>
+                <!-- prettier-ignore -->
+                <button class="content__btn" type="button" aria-label="Close window" aria-hidden="true" data-modal-close>
+                  Close window
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="content" data-modal id="modal-3">
+            <div class="content__wrapper">
+              <div class="content__header">
+                <h5 class="content__title">Cart</h5>
+              </div>
+              <div class="content__main">
+                <div class="order-modal__content">
+                  <div class="order-modal__top">
+                    <h2 class="order-modal__title">Making an order</h2>
+                    <span class="order-modal__number">Oreder number: № 000 01</span>
+                  </div>
+                  <div class="order-modal__info">
+                    <div class="order-modal__quantity order-modal__info-item">
+                      Products in the order: <span>3 pcs</span>
+                    </div>
+                    <div class="order-modal__summ order-modal__info-item">Total price: <span>5 000 $</span></div>
+                    <div class="order-modal__products order-modal__info-item">
+                      <button class="order-modal__btn">Cart list</button>
+                      <ul class="order-modal__list">
+                        <!-- <li class="order-modal__item">
+                          <article class="order-modal__product order-product">
+                            <img src="img/macbook/3.png" alt="Notebook" class="order-product__img" />
+                            <div class="order-product__text">
+                              <h3 class="order-product__title">Chronograph Shadow 41.5mm</h3>
+                              <span class="order-product__price">1 230 $</span>
+                            </div>
+                            <button class="order-product__delete"></button>
+                          </article>
+                        </li> -->
+                      </ul>
+                    </div>
+                  </div>
+                  <form action="#" class="order-modal__form order">
+                    <label class="order__label">
+                      <span class="order__text">Your name</span>
+                      <input class="order__input" name="name" type="text" placeholder="Name" />
+                    </label>
+                    <label class="order__label">
+                      <span class="order__text">Phone number</span>
+                      <input class="order__input" name="phone" type="tel" placeholder="+998 (__)___-__-__" />
+                    </label>
+                    <label class="order__label">
+                      <span class="order__text">E mail</span>
+                      <input class="order__input" name="email" type="email" placeholder="Post@gmail.com" />
+                    </label>
+                    <button class="order__btn btn">Send</button>
+                  </form>
+                </div>
+                <!-- prettier-ignore -->
+                <button class="content__btn" type="button" aria-label="Close window" aria-hidden="true" data-modal-close>
+                  Close window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--========== BURGER ==========-->
+      <section class="mobileNav container-offset">
+        <div class="container">
+          <div class="mobileNav__wrapper">
+            <div class="mobileNav__header">
+              <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                <span class="burger__line"></span>
+              </button>
+              <p class="mobileNav__text">Burger menu</p>
+            </div>
+            <div class="mobileNav__content" data-menu>
+              <ul class="mobileNav__list">
+                <li class="mobileNav__item">
+                  <a class="mobileNav__link" href="#">Lorem, ipsum dolor.</a>
+                </li>
+                <li class="mobileNav__item">
+                  <a class="mobileNav__link" href="#">Lorem, ipsum dolor.</a>
+                </li>
+                <li class="mobileNav__item">
+                  <a class="mobileNav__link" href="#">Lorem, ipsum dolor.</a>
+                </li>
+                <li class="mobileNav__item">
+                  <a class="mobileNav__link" href="#">Lorem, ipsum dolor.</a>
+                </li>
+                <li class="mobileNav__item">
+                  <a class="mobileNav__link" href="#">Lorem, ipsum dolor.</a>
+                </li>
+                <li class="mobileNav__item">
+                  <a class="mobileNav__link" href="#">Lorem, ipsum dolor.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--========== DROP DOWN ==========-->
+      <section class="dropDown container-offset">
+        <div class="container">
+          <div class="dropDown__wrapper">
+            <div class="drop-down">
+              <button class="drop-down__select" type="button" aria-label="select">
+                <span class="drop-down__selected">Languages</span>
+                <div class="drop-down__caret"></div>
+              </button>
+              <ul class="drop-down__menu">
+                <li class="drop-down__item">Java Script</li>
+                <li class="drop-down__item">Python</li>
+                <li class="drop-down__item">PHP</li>
+                <li class="drop-down__item">C++</li>
+                <li class="drop-down__item">C#</li>
+              </ul>
+            </div>
+            <div class="drop-down">
+              <button class="drop-down__select" type="button" aria-label="select">
+                <span class="drop-down__selected">Socials</span>
+                <div class="drop-down__caret"></div>
+              </button>
+              <ul class="drop-down__menu">
+                <li class="drop-down__item">Instagram</li>
+                <li class="drop-down__item">Facebook</li>
+                <li class="drop-down__item">Pinterest</li>
+                <li class="drop-down__item">Twitter</li>
+                <li class="drop-down__item">Yahoo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--========== SHOPS ==========-->
+      <section class="shop container-offset">
+        <div class="container">
+          <div class="shop__content grid-container">
+            <div class="filters">
+              <div class="filters__item filters-price">
+                <h3 class="filters-price__title">Price</h3>
+                <div class="filters-price__slider"></div>
+                <div class="filters-price__inputs">
+                  <input type="text" class="filters-price__input" placeholder="asdf" />
+                  <input type="text" class="filters-price__input" placeholder="asdf" />
+                </div>
+              </div>
+            </div>
+            <ul class="product-grid">
+              <li class="product-grid__item">
+                <div class="shop__header">Card</div>
+                <article class="product">
+                  <a class="product__image" href="#">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/1.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/2.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/3.png" alt="Notebook" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  <h3 class="product__title">
+                    <a href="#">APPLE A1707 MacBook Pro&nbsp;15</a>
+                  </h3>
+                  <div class="product__props">
+                    <span class="product__rating"> 4,5 </span>
+                    <span class="product__testimonials">83 reviews</span>
+                  </div>
+                  <div class="product__info">
+                    <span class="product__term">Article number: 879876</span>
+                    <span class="product__available">In stock: 13 pieces</span>
+                  </div>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">12 789 $</span>
+                    <span class="product-price__old">14 578 $</span>
+                  </div>
+                  <button class="product__btn">Add to Cart</button>
+                </article>
+              </li>
+              <li class="product-grid__item">
+                <div class="shop__header">Card</div>
+                <article class="product">
+                  <a class="product__image" href="#">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/1.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/2.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/3.png" alt="Notebook" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  <h3 class="product__title">
+                    <a href="#">APPLE A1707 MacBook Pro&nbsp;15</a>
+                  </h3>
+                  <div class="product__props">
+                    <span class="product__rating"> 4,5 </span>
+                    <span class="product__testimonials">83 reviews</span>
+                  </div>
+                  <div class="product__info">
+                    <span class="product__term">Article number: 879876</span>
+                    <span class="product__available">In stock: 13 pieces</span>
+                  </div>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">7 789 $</span>
+                    <span class="product-price__old">14 578 $</span>
+                  </div>
+                  <button class="product__btn">Add to Cart</button>
+                </article>
+              </li>
+              <li class="product-grid__item">
+                <div class="shop__header">Card</div>
+                <article class="product">
+                  <a class="product__image" href="#">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/1.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/2.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/3.png" alt="Notebook" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  <h3 class="product__title">
+                    <a href="#">APPLE A1707 MacBook Pro&nbsp;15</a>
+                  </h3>
+                  <div class="product__props">
+                    <span class="product__rating"> 4,5 </span>
+                    <span class="product__testimonials">83 reviews</span>
+                  </div>
+                  <div class="product__info">
+                    <span class="product__term">Article number: 879876</span>
+                    <span class="product__available">In stock: 13 pieces</span>
+                  </div>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">9 789 $</span>
+                    <span class="product-price__old">14 578 $</span>
+                  </div>
+                  <button class="product__btn">Add to Cart</button>
+                </article>
+              </li>
+              <li class="product-grid__item">
+                <div class="shop__header">Card</div>
+                <article class="product">
+                  <a class="product__image" href="#">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/1.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/2.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/3.png" alt="Notebook" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  <h3 class="product__title">
+                    <a href="#">APPLE A1707 MacBook Pro&nbsp;15</a>
+                  </h3>
+                  <div class="product__props">
+                    <span class="product__rating"> 4,5 </span>
+                    <span class="product__testimonials">83 reviews</span>
+                  </div>
+                  <div class="product__info">
+                    <span class="product__term">Article number: 879876</span>
+                    <span class="product__available">In stock: 13 pieces</span>
+                  </div>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">10 789 $</span>
+                    <span class="product-price__old">14 578 $</span>
+                  </div>
+                  <button class="product__btn">Add to Cart</button>
+                </article>
+              </li>
+              <li class="product-grid__item">
+                <div class="shop__header">Card</div>
+                <article class="product">
+                  <a class="product__image" href="#">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/1.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/2.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/3.png" alt="Notebook" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  <h3 class="product__title">
+                    <a href="#">APPLE A1707 MacBook Pro&nbsp;15</a>
+                  </h3>
+                  <div class="product__props">
+                    <span class="product__rating"> 4,5 </span>
+                    <span class="product__testimonials">83 reviews</span>
+                  </div>
+                  <div class="product__info">
+                    <span class="product__term">Article number: 879876</span>
+                    <span class="product__available">In stock: 13 pieces</span>
+                  </div>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">5 789 $</span>
+                    <span class="product-price__old">14 578 $</span>
+                  </div>
+                  <button class="product__btn">Add to Cart</button>
+                </article>
+              </li>
+              <li class="product-grid__item">
+                <div class="shop__header">Card</div>
+                <article class="product">
+                  <a class="product__image" href="#">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/1.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/2.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/3.png" alt="Notebook" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  <h3 class="product__title">
+                    <a href="#">APPLE A1707 MacBook Pro&nbsp;15</a>
+                  </h3>
+                  <div class="product__props">
+                    <span class="product__rating"> 4,5 </span>
+                    <span class="product__testimonials">83 reviews</span>
+                  </div>
+                  <div class="product__info">
+                    <span class="product__term">Article number: 879876</span>
+                    <span class="product__available">In stock: 13 pieces</span>
+                  </div>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">6 789 $</span>
+                    <span class="product-price__old">14 578 $</span>
+                  </div>
+                  <button class="product__btn">Add to Cart</button>
+                </article>
+              </li>
+              <li class="product-grid__item">
+                <div class="shop__header">Card</div>
+                <article class="product">
+                  <a class="product__image" href="#">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/1.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/2.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/3.png" alt="Notebook" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  <h3 class="product__title">
+                    <a href="#">APPLE A1707 MacBook Pro&nbsp;15</a>
+                  </h3>
+                  <div class="product__props">
+                    <span class="product__rating"> 4,5 </span>
+                    <span class="product__testimonials">83 reviews</span>
+                  </div>
+                  <div class="product__info">
+                    <span class="product__term">Article number: 879876</span>
+                    <span class="product__available">In stock: 13 pieces</span>
+                  </div>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">7 789 $</span>
+                    <span class="product-price__old">14 578 $</span>
+                  </div>
+                  <button class="product__btn">Add to Cart</button>
+                </article>
+              </li>
+              <li class="product-grid__item">
+                <div class="shop__header">Card</div>
+                <article class="product">
+                  <a class="product__image" href="#">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/1.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/2.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/3.png" alt="Notebook" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  <h3 class="product__title">
+                    <a href="#">APPLE A1707 MacBook Pro&nbsp;15</a>
+                  </h3>
+                  <div class="product__props">
+                    <span class="product__rating"> 4,5 </span>
+                    <span class="product__testimonials">83 reviews</span>
+                  </div>
+                  <div class="product__info">
+                    <span class="product__term">Article number: 879876</span>
+                    <span class="product__available">In stock: 13 pieces</span>
+                  </div>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">12 789 $</span>
+                    <span class="product-price__old">2 578 $</span>
+                  </div>
+                  <button class="product__btn">Add to Cart</button>
+                </article>
+              </li>
+              <li class="product-grid__item">
+                <div class="shop__header">Card</div>
+                <article class="product">
+                  <a class="product__image" href="#">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/1.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/2.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/3.png" alt="Notebook" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  <h3 class="product__title">
+                    <a href="#">APPLE A1707 MacBook Pro&nbsp;15</a>
+                  </h3>
+                  <div class="product__props">
+                    <span class="product__rating"> 4,5 </span>
+                    <span class="product__testimonials">83 reviews</span>
+                  </div>
+                  <div class="product__info">
+                    <span class="product__term">Article number: 879876</span>
+                    <span class="product__available">In stock: 13 pieces</span>
+                  </div>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">12 789 $</span>
+                    <span class="product-price__old">3 578 $</span>
+                  </div>
+                  <button class="product__btn">Add to Cart</button>
+                </article>
+              </li>
+              <li class="product-grid__item">
+                <div class="shop__header">Card</div>
+                <article class="product">
+                  <a class="product__image" href="#">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/1.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/2.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/3.png" alt="Notebook" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  <h3 class="product__title">
+                    <a href="#">APPLE A1707 MacBook Pro&nbsp;15</a>
+                  </h3>
+                  <div class="product__props">
+                    <span class="product__rating"> 4,5 </span>
+                    <span class="product__testimonials">83 reviews</span>
+                  </div>
+                  <div class="product__info">
+                    <span class="product__term">Article number: 879876</span>
+                    <span class="product__available">In stock: 13 pieces</span>
+                  </div>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">12 789 $</span>
+                    <span class="product-price__old">1 578 $</span>
+                  </div>
+                  <button class="product__btn">Add to Cart</button>
+                </article>
+              </li>
+              <li class="product-grid__item">
+                <div class="shop__header">Card</div>
+                <article class="product">
+                  <a class="product__image" href="#">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/1.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/2.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/3.png" alt="Notebook" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  <h3 class="product__title">
+                    <a href="#">APPLE A1707 MacBook Pro&nbsp;15</a>
+                  </h3>
+                  <div class="product__props">
+                    <span class="product__rating"> 4,5 </span>
+                    <span class="product__testimonials">83 reviews</span>
+                  </div>
+                  <div class="product__info">
+                    <span class="product__term">Article number: 879876</span>
+                    <span class="product__available">In stock: 13 pieces</span>
+                  </div>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">12 789 $</span>
+                    <span class="product-price__old">3 578 $</span>
+                  </div>
+                  <button class="product__btn">Add to Cart</button>
+                </article>
+              </li>
+              <li class="product-grid__item">
+                <div class="shop__header">Card</div>
+                <article class="product">
+                  <a class="product__image" href="#">
+                    <div class="product__switch image-switch">
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/1.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/2.png" alt="Notebook" />
+                        </div>
+                      </div>
+                      <div class="image-switch__item">
+                        <div class="image-switch__img">
+                          <img src="img/macbook/3.png" alt="Notebook" />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                  <h3 class="product__title">
+                    <a href="#">APPLE A1707 MacBook Pro&nbsp;15</a>
+                  </h3>
+                  <div class="product__props">
+                    <span class="product__rating"> 4,5 </span>
+                    <span class="product__testimonials">83 reviews</span>
+                  </div>
+                  <div class="product__info">
+                    <span class="product__term">Article number: 879876</span>
+                    <span class="product__available">In stock: 13 pieces</span>
+                  </div>
+                  <div class="product__price product-price">
+                    <span class="product-price__current">12 789 $</span>
+                    <span class="product-price__old">3 578 $</span>
+                  </div>
+                  <button class="product__btn">Add to Cart</button>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--========== FORM ==========-->
+      <section class="forma container-offset">
+        <div class="container">
+          <div class="forma__wrapper">
+            <div class="forma__header">FORM</div>
+            <form action="#" class="form" id="form" method="POST" enctype="multipart/form-data">
+              <label class="form__label">
+                <span>First name</span>
+                <input id="name" type="text" name="name" value="" class="form__input" placeholder="Name" />
+              </label>
+              <label class="form__label">
+                <span>Last Name</span>
+                <input id="name" type="text" name="last-name" value="" class="form__input" placeholder="Last name" />
+              </label>
+              <label class="form__label">
+                <span>Email</span>
+                <input id="email" type="email" name="email" value="" class="form__input" placeholder="Email" />
+              </label>
+              <label class="form__label">
+                <span>Phone number</span>
+                <input id="tel" type="tel" name="phone" value="" class="form__input" placeholder="Phone number" />
+              </label>
+              <div class="family-smoking">
+                <h4 class="family-smoking__title">Smoking:</h4>
+                <label class="family-smoking__label">
+                  <span>always</span>
+                  <input type="checkbox" value="always" name="smoking" class="family-smoking__input" />
+                  <span class="family-smoking__style"></span>
+                </label>
+                <label class="family-smoking__label">
+                  <span>never smoked</span>
+                  <input checked type="checkbox" value="never smoked" name="smoking" class="family-smoking__input" />
+                  <span class="family-smoking__style"></span>
+                </label>
+                <label class="family-smoking__label">
+                  <span>sometimes</span>
+                  <input type="checkbox" value="sometimes" name="smoking" class="family-smoking__input" />
+                  <span class="family-smoking__style"></span>
+                </label>
+              </div>
+              <div class="family-status">
+                <h4 class="family-status__title">Family status:</h4>
+                <label class="family-smoking__label">
+                  <span>Married</span>
+                  <input type="radio" value="Married" name="family-status" class="family-smoking__input" />
+                  <span class="family-smoking__style"></span>
+                </label>
+                <label class="family-smoking__label">
+                  <span>Not married</span>
+                  <input checked type="radio" value="Not married" name="family-status" class="family-smoking__input" />
+                  <span class="family-smoking__style"></span>
+                </label>
+              </div>
+              <select name="age" class="select">
+                <option value="from 18 to 25">young</option>
+                <option value="from 26 to 33">old man</option>
+              </select>
+              <textarea class="form__textarea" name="textarea" data-autoresize></textarea>
+              <div class="family-status__foto">
+                <h4 class="family-status__title">select photo</h4>
+                <input class="family-status__file" type="file" name="file[]" multiple id="myfile" />
+                <div class="family-status__foto--preview"></div>
+              </div>
+              <button type="submit" class="form__btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="source/inputmask.js"></script>
+    <script src="source/simplebar.js"></script>
+    <script src="source/justvalidate.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/fixedBlog.js"></script>
+    <script src="js/card.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/tel.js"></script>
+  </body>
+</html>

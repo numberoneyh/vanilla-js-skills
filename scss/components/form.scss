@@ -1,0 +1,154 @@
+/* ========== FORM ========== */
+
+.forma {
+  &__wrapper {
+    max-width: 500px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $black;
+    border-bottom: transparent;
+    min-height: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: $bgcbtn;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border: 1px solid $black;
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 17px;
+
+    span {
+      margin-bottom: 5px;
+      user-select: none;
+    }
+  }
+
+  &__input {
+    padding: 10px;
+    outline: none;
+    border: 1px solid $black;
+  }
+
+  &__textarea {
+    overflow: hidden;
+    margin-top: 20px;
+    border: 1px solid $black;
+    outline: none;
+    padding: 20px;
+    min-height: 125px;
+    max-width: 100%;
+    resize: none;
+  }
+
+  &__btn {
+    margin-top: 20px;
+    height: 40px;
+    background-color: $bgcbtn;
+    border: 1px solid $black;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+  }
+
+  &__btn:hover {
+    color: #fff;
+    background-color: $black;
+  }
+}
+
+.family-smoking {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2px;
+  }
+
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  &__input:checked + &__style::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__style {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border: 1px solid $black;
+  }
+
+  &__style::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: $black;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+
+    span {
+      user-select: none;
+    }
+  }
+
+  &__label:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.family-status {
+  margin-bottom: 30px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  &__foto {
+    margin-top: 20px;
+  }
+}
+
+.select {
+  background-color: #ccc;
+  outline: none;
+}

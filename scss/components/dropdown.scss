@@ -1,0 +1,80 @@
+/* ========== DROP DOWN ========== */
+
+.dropDown {
+  margin-top: 250px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+  }
+}
+
+.drop-down {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+
+  &__select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 11px;
+    border: 1px solid $black;
+    background-color: $bgcbtn;
+  }
+
+  &__selected {
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  &__caret {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid $black;
+    transition: transform 0.4s;
+  }
+
+  &__menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    background-color: #ccc;
+    transform: translateY(-30%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+
+  &__menu--active {
+    opacity: 1;
+    transform: none;
+    z-index: 200;
+  }
+
+  &__item {
+    padding: 8px 0;
+    padding-left: 20px;
+    border: 1px solid $black;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1px;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  &__item:hover {
+    background-color: $bgcbtn;
+  }
+
+  &__item--active {
+    background-color: $bgcbtn;
+  }
+}

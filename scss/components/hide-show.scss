@@ -1,0 +1,40 @@
+/* ========== HIDE-SHOW ========== */
+
+.hide-show {
+  &__btn {
+    overflow-anchor: none;
+    margin-bottom: 10px;
+    padding: 7px 10px;
+    border: 1px solid $black;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: $bgcbtn;
+  }
+
+  &__content {
+    display: flex;
+    max-width: 900px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease-in-out;
+  }
+
+  &__content--active {
+    height: 275px;
+    border: 1px solid $black;
+  }
+
+  &__descr {
+    padding: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: justify;
+    color: $text;
+  }
+
+  &__img {
+    width: 367px;
+    height: 273px;
+    object-fit: cover;
+  }
+}

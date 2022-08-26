@@ -1,0 +1,165 @@
+.shop__header {
+  padding: 15px 20px;
+  // max-width: 280px;
+  border: 1px solid $black;
+  border-bottom: transparent;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: $bgcbtn;
+}
+
+.product {
+  // max-width: 280px;
+  padding: 20px;
+  border: 1px solid $black;
+  background-color: #ccc;
+
+  &__image {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+    height: 180px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    line-height: 24px;
+  }
+
+  &__props {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+
+  &__rating {
+    font-weight: 600;
+  }
+
+  &__rating::before {
+    content: "★";
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  &__testimonials {
+    margin-left: 10px;
+    color: rgb(95, 95, 95);
+  }
+
+  &__info {
+    margin-bottom: 20px;
+    color: rgb(95, 95, 95);
+  }
+
+  &__term {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__available {
+    display: block;
+  }
+
+  &__btn {
+    border: 1px solid $black;
+    padding: 15px;
+    width: 100%;
+    font-weight: 500;
+    background: $bgcbtn;
+    transition: background-color 0.1s ease-in, color 0.1s ease-in;
+  }
+
+  &__btn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  &__btn:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.image-switch {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+
+  &__item {
+    flex-grow: 1;
+    cursor: pointer;
+  }
+
+  &__item:first-child .image-switch__img {
+    opacity: 1;
+    z-index: -1;
+  }
+
+  &__item:hover .image-switch__img {
+    opacity: 1;
+  }
+
+  &__img {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transform: translateX(-50%);
+    background-color: #ccc;
+    opacity: 0;
+  }
+
+  &__img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.image-pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  width: 100%;
+
+  &__itam {
+    display: block;
+    width: 5px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 3px;
+    background-color: $bgcbtn;
+  }
+
+  &__itam--active {
+    background-color: $black;
+  }
+}
+
+.product-price {
+  margin-bottom: 20px;
+  &__current {
+    margin-right: 10px;
+    font-weight: 500;
+  }
+
+  &__old {
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: line-through;
+    color: rgb(99, 99, 99);
+  }
+}

@@ -1,0 +1,40 @@
+/* ========== HEADER ========== */
+
+.header {
+  padding: 35px 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &__link {
+    padding: 10px 15px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
+  }
+
+  &__link:hover {
+    transform: scale(1.5);
+    background-color: #000;
+    color: #fff;
+  }
+
+  &__item:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
+}

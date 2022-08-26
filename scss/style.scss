@@ -1,0 +1,116 @@
+@import "fonts";
+@import "vars";
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  min-width: 320px;
+  min-height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 1;
+  color: $black;
+  background-color: #ccc;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  background-color: transparent;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: initial;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1510px;
+}
+
+.container-offset {
+  margin-top: 50px;
+}
+
+[data-simplebar] {
+  overflow: auto;
+}
+
+// IMPORTS
+@import "normalize";
+
+@import "components/header";
+@import "components/tabs";
+@import "components/hide-show";
+@import "components/accordion";
+@import "components/modal";
+@import "components/burger";
+@import "components/dropdown";
+@import "components/shop";
+@import "components/shop-grid";
+@import "components/cart-content";
+@import "components/modalCart";
+@import "components/form";

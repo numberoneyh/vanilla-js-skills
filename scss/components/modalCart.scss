@@ -1,0 +1,151 @@
+.order-modal {
+  &__content {
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid $black;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__info {
+    margin-bottom: 30px;
+  }
+
+  &__quantity {
+    margin-bottom: 5px;
+  }
+
+  &__summ {
+    margin-bottom: 5px;
+  }
+
+  &__btn {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &__btn::after {
+    content: "";
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #000;
+    transition: transform 0.4s;
+  }
+
+  &__list {
+    display: none;
+  }
+
+  &__list--active {
+    display: block;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  &__product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid $black;
+    max-width: 500px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.order-product {
+  &__img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  &__text {
+    margin-left: 15px;
+  }
+
+  &__title {
+    font-size: 14px;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  &__delete {
+    margin-left: auto;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/svg/delete.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.order {
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+
+  &__input {
+    padding: 0 10px;
+    border-radius: 4px;
+    height: 40px;
+    outline: none;
+    background-color: rgb(131, 131, 131);
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+
+  &__input::placeholder {
+    font-size: 14px;
+    color: #ccc;
+  }
+
+  &__input:focus {
+    outline: #000;
+  }
+
+  &__btn {
+    width: 100%;
+    background-color: $bgcbtn;
+    padding: 10px 0;
+    border: 1px solid $black;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__btn:hover {
+    color: $white;
+    background-color: $black;
+  }
+}

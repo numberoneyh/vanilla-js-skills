@@ -1,0 +1,74 @@
+/* ========== TABS ========== */
+
+.tabs {
+  &__content {
+    max-width: 900px;
+  }
+
+  &__list {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    border: 1px solid $black;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__btn {
+    padding: 7px 10px;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: $bgcbtn;
+    transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  }
+
+  &__btn:hover {
+    color: $white;
+    background-color: #000;
+  }
+
+  &__btn--active {
+    color: $white;
+    background-color: #000;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 32px;
+    color: $black;
+  }
+
+  &__info {
+    display: none;
+    border: 1px solid $black;
+  }
+
+  &__info--active {
+    display: flex;
+    animation: 1s fadeIn;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    padding: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: justify;
+    color: $text;
+  }
+}
